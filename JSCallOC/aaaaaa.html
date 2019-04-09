@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+ <meta charset="utf-8">
+ <title>JS调用OC点击方法</title>
+
+
+    <script type="text/javascript">
+        
+     function func1(){
+         // 这里是通过'JSCallOC'这个名称跟OC进行交互, 后面的'parmar'是传给OC的参数
+         // window.webkit.messageHandlers.call_back.postMessage("parmar11");
+         window.webkit.messageHandlers.call_back.postMessage('ios111111');
+     }
+    function func2(){
+        // 这里是通过'JSCallOC'这个名称跟OC进行交互, 后面的'parmar'是传给OC的参数
+        // window.webkit.messageHandlers.call_back.postMessage("parmar11");
+        window.webkit.messageHandlers.call_back2.postMessage('ios222222');
+    }
+
+
+    </script>
+</head>
+<body>
+    sadfsdfsdf
+    <input type="button" value="js点击事件1" onclick="func1()"/></br>
+    <input type="button" value="js点击事件2" onclick="func2()"/></br>
+</body>
+</html>
