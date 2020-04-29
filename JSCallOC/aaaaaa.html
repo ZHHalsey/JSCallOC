@@ -8,12 +8,12 @@
     <script type="text/javascript">
         
      function func1(){
-         // 这里是通过'JSCallOC'这个名称跟OC进行交互, 后面的'parmar'是传给OC的参数
+         // 这里是通过'call_back'这个名称跟OC进行交互, 后面的'parmar'是传给OC的参数
          // window.webkit.messageHandlers.call_back.postMessage("parmar11");
          window.webkit.messageHandlers.call_back.postMessage('ios111111');
      }
     function func2(){
-        // 这里是通过'JSCallOC'这个名称跟OC进行交互, 后面的'parmar'是传给OC的参数
+        // 这里是通过'call_back2'这个名称跟OC进行交互, 后面的'parmar'是传给OC的参数
         // window.webkit.messageHandlers.call_back.postMessage("parmar11");
         window.webkit.messageHandlers.call_back2.postMessage('ios222222');
     }
